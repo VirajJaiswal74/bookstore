@@ -11,7 +11,7 @@ export const Freebook = () => {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get("https://bookstore-1-bglv.onrender.com/book");
         console.log(res);
         setBook(res.data);
       } catch (error) {
