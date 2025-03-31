@@ -1,0 +1,22 @@
+{
+  "name": "bookstore",
+  "version": "1.0.0",
+  "description": "mern project",
+  "license": "ISC",
+  "author": "Viraj",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon Backend/index.js",
+    "build":"npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
+    "start":"nodemon Backend/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.13.1",
+    "nodemon": "^3.1.9"
+  }
+}
